@@ -1,2 +1,16 @@
 ANGULAR
 
+install Angular: (it should be NodeJS and Python preinstalled)
+npm install -g @angular/cli
+
+create a new application:
+ng new angular-tour-of-heroes
+
+open project in Visual Studio Code
+
+run project:
+npm run start
+
+
+
+
