@@ -24,7 +24,18 @@ It's a good place to put initialization logic
 * two-way binding:
 <input [(ngModel)]="hero.name" placeholder="name">
 
+
+
+=====================================================================
 *** STANDARD MODULES ***
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 @NgModuledecorator annotates the top-level AppModule class
+
+<li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+
+<div *ngIf="selectedHero">
+
+
+
+======================================================================
 
