@@ -1,0 +1,8 @@
+.heroes li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.selected{
+    background-color: aqua;
+}
