@@ -16,6 +16,12 @@ project will be avaiable on http://localhost:4200/
 create a new Component:
 ng generate component heroes
 
+generate new Service:
+ng generate service hero
+
+generate new Service with providing it's Dependency Injection to AppModule component:
+ng generate service hero --module=app
+
 *
 The ngOnInit is a lifecycle hook.
 Angular calls ngOnInit shortly after creating a component. 
