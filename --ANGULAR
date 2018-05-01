@@ -22,10 +22,14 @@ ng generate service hero
 generate new Service with providing it's Dependency Injection to AppModule component:
 ng generate service hero --module=app
 
+
 generate AppRoutingModule:
 ng generate module app-routing --flat --module=app
 --flat puts the file in src/app instead of its own folder.
 --module=app tells the CLI to register it in the imports array of the AppModule.
+
+import {RouterModule, Routes} from '@angular/router';
+
 
 
 -----------------------------------------------------------------------
