@@ -1,0 +1,3 @@
+ng new hello-world  -> create new project
+cd hello-world      -> navigate inside the project's folder
+ng serve            -> run application
