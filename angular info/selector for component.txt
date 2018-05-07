@@ -1,0 +1,83 @@
+Different possibilities to define selector for components:
+v1 - as custom html-tag    -> 'app-root'  -> by default
+v2 - as class (with .(dot)) -> '.app-root'
+v3 - as attribute (with [] ) -> '[app-root]'
+
+//=================================================
+app.component.ts
+
+import { Component } from '@angular/core';
+
+
+
+@Component({
+  
+selector: 'app-root',
+  --> v1
+selector: 'app-root',
+  --> v2
+selector: 'app-root',
+  --> v3
+templateUrl: './app.component.html',
+  
+styleUrls: ['./app.component.css']
+
+})
+
+
+export class AppComponent {
+  
+title = 'Hello World!';
+
+}
+
+//================================================
+
+app.component.html - v1
+
+<div style="text-align:center">
+  
+    <h1>
+    
+    Welcome to {{ title }}!
+  
+    </h1>
+  
+    <app-test></app-test>      -> v1
+</div>
+
+//================================================
+
+app.component.html - v2
+
+<div style="text-align:center">
+  
+    <h1>
+    
+    Welcome to {{ title }}!
+  
+    </h1>
+  
+    <div class='app-test'>   -> v2
+
+    </div>      
+</div>
+
+//================================================
+
+app.component.html - v3
+
+<div style="text-align:center">
+  
+    <h1>
+    
+    Welcome to {{ title }}!
+  
+    </h1>
+  
+    <div app-test>   -> v3
+
+    </div>  
+</div>
+
+//================================================
